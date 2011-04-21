@@ -4,19 +4,22 @@ version: 1.2.0
 commands:
     faStart:
         description: Starts the event.
-        usage: /<command> 
+        usage: /faStart
     faStop:
         description: Stops the event
-        usage: /<command> 
+        usage: /faStop
     faAdd:
         description: Adds player to team. RED or BLUE
-        usage: /<command> 
+        usage: /faAdd <Group> <Player>
     faRemove:
         description: Removes player from team.
-        usage: /<command> 
-    faResource:
-        description: Sets amount of resources provided. 1, 2, or 3.
-        usage: /<command> 
+        usage: /faRemove <Player>
     faTime:
         description: Sets time limit before the Assault.
-        usage: /<command>
+        usage: /faTime <Time>
+    faTeams:
+        description: Get teams scores.
+        usage: /faTeams
+    faReturn:
+        description: Leave the battle.
+        usage: /faReturn

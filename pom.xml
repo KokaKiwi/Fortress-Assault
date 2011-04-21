@@ -1,14 +1,69 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.kokakiwi</groupId>
-  <artifactId>sell.fortressassault</artifactId>
+  <groupId>org.kokakiwi.ssell</groupId>
+  <artifactId>fortressassault</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <repositories>
+  		<repository>
+	      <id>bukkut-repo</id>
+	      <url>http://artifacts.lukegb.com/artifactory/repo</url>
+	    </repository>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://repo.bukkit.org/artifactory/libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-snapshot</name>
+          <url>http://repo.bukkit.org/artifactory/libs-snapshot</url>
+        </repository>
+  </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>plugins-release</name>
+          <url>http://repo.bukkit.org/artifactory/plugins-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>plugins-snapshot</name>
+          <url>http://repo.bukkit.org/artifactory/plugins-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+  <url>http://www.bukkit.org</url>
+  <developers>
+  	<developer>
+  		<id>KokaKiwi</id>
+  		<name>Koka El Kiwi</name>
+  		<email>admin@kokabsolu.com</email>
+  		<url>http://kokaelkiwi.tk</url>
+  		<organization>Kowy Group</organization>
+  		<roles>
+  		</roles>
+  	</developer>
+  </developers>
+  <build>
+  	<finalName>FortressAssault</finalName>
+  	<filters>
+  	</filters>
+  	<resources>
+  	</resources>
+  </build>
   <dependencies>
-    <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>craftbukkit</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-      <scope>compile</scope>
-    </dependency>
+  	<dependency>
+  		<groupId>org.bukkit</groupId>
+  		<artifactId>bukkit</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<scope>compile</scope>
+  	</dependency>
   </dependencies>
 </project>
